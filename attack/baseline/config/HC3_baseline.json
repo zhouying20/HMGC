@@ -1,0 +1,24 @@
+{
+  "task": "UT",
+  "out_dir": "./output/hc3/baseline",
+  "max_trans": 1,
+  "fields": "x",
+  "random_seed": 42,
+  "trans_methods": [
+    "SwapSynWordNet",
+    "MLMSuggestion",
+    "AppendIrr",
+    "BackTrans"
+  ],
+  "trans_config": {
+    "MLMSuggestion": {"max_sent_size": 512}
+  },
+  "return_unk": true,
+  "sub_methods": [],
+  "sub_config": {},
+  "attack_methods": null,
+  "validate_methods": [
+    "EditDistance",
+    "MaxWordsPerturbed"
+  ]
+}
